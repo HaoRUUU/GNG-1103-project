@@ -19,13 +19,18 @@ public class Timer3SceneChange : MonoBehaviour
 
             int minutes = Mathf.FloorToInt(remainingTime / 60);
             int seconds = Mathf.FloorToInt(remainingTime % 60);
-            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        }
 
-        // Change text color to red when time runs out
-        if (remainingTime <= 6)
-        {
-            timerText.color = Color.red;
+            // Check if timerText is assigned before using it
+            if (timerText != null)
+            {
+                timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+                // Change text color to red when time is running out
+                if (remainingTime <= 6)
+                {
+                    timerText.color = Color.red;
+                }
+            }
         }
 
         // Change scene when time runs out
@@ -37,6 +42,6 @@ public class Timer3SceneChange : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(nextSceneIndex); // Use the serialized index
+        SceneManager.LoadScene(0); // Use serialized scene index
     }
 }
