@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.49056602, g: 0.3771805, b: 0.3771805, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.07
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.33365968, g: 0.3670939, b: 0.4339623, a: 1}
@@ -25,9 +25,9 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.4
   m_AmbientMode: 1
-  m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_SubtractiveShadowColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+  m_SkyboxMaterial: {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.925
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4e56f695cacaa7f45a722329ce96c6af, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: f133d23b0d8cb4a3a943a175dffa43cf, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -11532,6 +11532,10 @@ PrefabInstance:
       value: Ash - Heavy - External Forces (3)
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 195.08687
       objectReference: {fileID: 0}
@@ -16366,7 +16370,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -18016,6 +18020,10 @@ PrefabInstance:
       value: Ash - Heavy - External Forces (2)
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 175.75931
       objectReference: {fileID: 0}
@@ -18783,6 +18791,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
@@ -18934,6 +18946,10 @@ PrefabInstance:
     - target: {fileID: 189676, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_Name
       value: Ash - Heavy - External Forces (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31507,6 +31523,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
@@ -31516,7 +31536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.85
+      value: 4.76
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32983,6 +33003,10 @@ PrefabInstance:
       value: Ash - Heavy - External Forces (4)
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 207.77548
       objectReference: {fileID: 0}
@@ -33946,6 +33970,10 @@ PrefabInstance:
     - target: {fileID: 189676, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_Name
       value: Ash - Heavy - External Forces
+      objectReference: {fileID: 0}
+    - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 462816, guid: 48ac1019076b747abac6f8e6fd6d3fd9, type: 3}
       propertyPath: m_LocalPosition.x

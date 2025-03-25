@@ -4,7 +4,7 @@ public class AxeController : MonoBehaviour
 {
     public Collider axeTipCollider;  // Drag the axe tip's collider here in the Unity Editor.
 
-    private Rigidbody axeRb;
+    public Rigidbody axeRb;
     private float breakThreshold = 8f; // Adjust based on your needs.
 
     private void Start()
@@ -32,6 +32,7 @@ public class AxeController : MonoBehaviour
             // Check if the impact is strong enough to break the rock
             if (modifiedForce > breakThreshold)
             {
+                Debug.Log("tree broken");
                 collision.gameObject.transform.parent.GetComponent<TreeController>().BreakTree();
             }
         }
