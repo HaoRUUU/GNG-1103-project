@@ -42,6 +42,6 @@ public class Timer3SceneChange : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(0); // Use serialized scene index
+        SceneManager.LoadScene(7); // Use serialized scene index
     }
 }
