@@ -37,6 +37,6 @@ public class TimerSceneChange : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(3);// Change to scene with index 3
+        SceneManager.LoadScene(2);// Change to scene with index 2
     }
 }

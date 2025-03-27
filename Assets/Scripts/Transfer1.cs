@@ -15,9 +15,9 @@ public class Transfer1 : MonoBehaviour
     void CountTime()
     {
         countTime += Time.deltaTime; // 每帧增加时间
-        if (countTime >= 15f) // 如果计时器达到 15 秒
+        if (countTime >= 17f) // 如果计时器达到 17 秒
         {
-            SceneManager.LoadScene(2); // 跳转到场景编号为 2 的场景
+            SceneManager.LoadScene(1); // 跳转到场景编号为 1 的场景
         }
     }
 }

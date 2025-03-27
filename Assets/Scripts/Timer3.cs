@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -7,33 +5,38 @@ using TMPro;
 public class Timer3SceneChange : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private float remainingTime; // Set the start time in Inspector
-    [SerializeField] private int nextSceneIndex; // Scene index to change to
+    [SerializeField] private float remainingTime = 30f; // Default 30s if not set in Inspector
+    [SerializeField] private int nextSceneIndex = 1; // Scene index to load
+
+    void Start()
+    {
+        Time.timeScale = 1; // Ensure time is running
+        Debug.Log("Timer Started: " + remainingTime);
+    }
 
     void Update()
     {
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
-            if (remainingTime < 0) remainingTime = 0; // Prevent negative time
+            remainingTime = Mathf.Max(remainingTime, 0); // Prevent negative time
 
             int minutes = Mathf.FloorToInt(remainingTime / 60);
             int seconds = Mathf.FloorToInt(remainingTime % 60);
 
-            // Check if timerText is assigned before using it
             if (timerText != null)
             {
-                timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+                timerText.text = $"{minutes:00}:{seconds:00}";
 
-                // Change text color to red when time is running out
                 if (remainingTime <= 6)
                 {
-                    timerText.color = Color.red;
+                    timerText.color = Color.red; // Change color when time is low
                 }
             }
+
+            Debug.Log("Remaining Time: " + remainingTime); // Check if timer updates
         }
 
-        // Change scene when time runs out
         if (remainingTime <= 0)
         {
             ChangeScene();
@@ -42,6 +45,7 @@ public class Timer3SceneChange : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(7); // Use serialized scene index
+        Debug.Log("Changing Scene to: " + 6);
+        SceneManager.LoadScene(6); // Load next scene
     }
 }
